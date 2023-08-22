@@ -200,3 +200,312 @@
                 </main>
         </body>
 </html>
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,400&family=Roboto:wght@300;400;900&family=Saira:wght@700&display=swap');
+:root{ 
+    --primary-color: #1e0082;
+    --secondary-color: #a21e1e;
+    --gray: #4a4d4a;
+    --bg-primary: #ecf0f3;
+}
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+#html { 
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h1,h2{ 
+    font-family: 'Saira', sans-serif;
+}
+ul{ 
+    list-style: none;
+}
+a { 
+    text-decoration: none;
+}
+/*Utility Classes*/
+.container {
+    max-width: 1100px;
+    margin: auto; 
+    padding: 0 2rem;
+}
+.text-primary{ 
+    color: var(--secondary-color);
+}
+.btu-primary{
+    background-color: rgb(0, 255, 170);
+    color: #ffffff;
+    padding: 8px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s ease;
+}
+.btu-primary:hover { 
+    background-color: rgb(0, 128, 128);
+}
+/*Header Start*/
+ header { 
+    background-color: var(--bg-primary);
+    height: 100vh;
+ }
+ header .navbar { 
+    background-color: #ffffff;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.home .Logo { 
+    font-weight: 900;
+    color: var(--gray);
+}
+header .navbar nav { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 1.5rem 2rem;
+} 
+#home #Logo { 
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 600;
+}
+header .navbar nav ul { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .navbar nav ul a { 
+    margin: 0 15px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+header .header-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 5rem 2rem 0;
+    height: 100%;
+}
+header .header-content .content-text { 
+    margin-right: 5rem;
+}
+#home .header-content p span{ 
+    font-weight: 700;
+    font-size: 20px;
+}
+#home .header-content h1{ 
+    font-size: 80px;
+    color: rgb(98, 98, 98);
+    text-shadow: 3px 3px 3px rgb(0, 0, 0 ,0.2);
+}
+#home .header-content .title { 
+    font-size: 20px;
+    color:  var(--gray);
+    margin: 10px  0;
+    font-weight:  500;
+}
+#home .header-content .social { 
+    margin: 1rem 0 2rem;
+}
+#home .header-content .social a i { 
+    font-size: 30px;
+    background-color: #ccc;
+    color: #ffffff;
+   margin-right: 15px;
+   transform: all 0.5s ease;
+   border-radius: 22px;
+}
+#home .header-content .social a i:hover{
+    transform: scale(0.85);
+}
+
+/*Header End*/
+/* About strat */
+#About ,
+#skills  , #Education , #portfolio { 
+    padding: 6rem 0;
+}
+#About h2
+,#skills h2 , #Education h2 , #portfolio h2 , #Contact h2 { 
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+#About hr , #skills hr , #Education hr , #portfolio hr { 
+    width: 100px;
+    height: 3px;
+    border: none;
+    background-color: var(--secondary-color);
+    margin: 5px auto 0;
+}
+#About .about-content {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 3rem;
+}
+#About .about-content .col-1 h3 { 
+    font-size: 28px;
+    color: #090028;
+    margin-bottom: 15px;
+}
+#About .about-content .col-1 p{ 
+    margin-bottom: 20px;
+    color: var(--gray);
+    font-size: 18px;
+    line-height: 1.5;
+}
+#About .about-content .col-2 p { 
+    font-size: 16px;
+    color: var(--gray);
+    margin-bottom: 5px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+}
+/*About End*/
+/* skills start*/
+#skills { 
+    background-color: var(--primary-color);
+    flex-direction: row;
+    flex-wrap: wrap;
+    transform: all 0.5s ease;
+}
+#skills h2 , #portfolio h2 { 
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+#skills .skills-content { 
+    margin-top: 2rem;
+    background-color: #0f272d;
+}
+
+#skills .skills-content .row { 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    text-align: center;
+}
+#skills .skills-content .row .item { 
+    color: #ffffff;
+    background-color: #000;
+    margin: 20px;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.3 ease;
+}
+#skills .skills-content .row .item:hover { 
+    box-shadow: 50px 50px 50px  #00ab770c;
+}
+#skills .row img { 
+    max-width: 40px;
+}
+#skills .row p { 
+    color: #ffffff;
+}
+/* skills End*/
+/*Education Start*/
+#Education { 
+    background-color: var(--);
+    text-align: center;
+}
+#Education .row { 
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 4rem;
+    width: 450px;
+    height: 500px;
+}
+#education p { 
+    font-size: 35px;
+}
+/*Education End*/
+/*portfolio Start*/
+#portfolio { 
+    background-color: var(--primary-color);
+}
+#portfolio .row { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 4rem;
+}
+#portfolio .row .item  , #Education .row .item { 
+    background-color: #ffffff;
+    border-radius: 8px;
+    transition: all;
+}
+#portfolio .row .item:hover { 
+    transform: scale(1.03);
+    transition: all 0.3 ease;
+}
+#portfolio .row .item .item-content , #Education .row .item .item-content { 
+    padding: 20px 15px 30px;
+}
+#portfolio .row .item .item-content h3 , #Education .row .item .item-content h3 { 
+    text-align: center;
+    font-size: 20px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+} 
+#portfolio .row .item .item-content a  , #Education .row .item .item-content a { 
+    align-items: center;
+    font-size: 14px;
+    color: var(--secondary-color);
+    text-align: center;
+}
+#portfolio .row .item img  , #Education .row .item img { 
+    max-width: 100%;
+    border-bottom: 2px solid #ccc;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+/*portfolio End*/
+/*contact start*/
+#Contact { 
+background-color: #00f4ab0c;
+padding: 4rem 0;
+}
+#Contact .row { 
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+#Contact .row input , #Contact .row textarea { 
+    display: block;
+    width: 95%;
+    margin: 2rem 0;
+    padding: 10px;
+    background-color: #00f4ab0c;
+    border: 1px solid #ddd;
+    outline: none;
+}
+#Contact .row img { 
+    width: 500px;
+}
+/*contact End*/
